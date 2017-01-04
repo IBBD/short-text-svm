@@ -1,16 +1,22 @@
 # 使用SVM算法对短文本分类
 
+主要针对投诉类短文本分类。
+
 ## Install
 
 ```
 pip install -r requirements.txt
 ```
 
-## 步骤
+## 使用步骤
 
 提取的特征在文件`confing.py`中
 
 ```sh
+# 准备原始文本数据
+# csv格式，每行两个字段：title和content
+./source_data.csv
+
 # 根据特征生成语料库
 python ./format_samples_data.py
 
@@ -20,7 +26,7 @@ python ./train.py
 # 在训练集上预测
 python ./train_predict.py
 
-# 测试
+# 在测试集上预测
 python ./test_predict.py
 
 # 应用

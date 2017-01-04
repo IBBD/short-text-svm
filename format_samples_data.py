@@ -10,6 +10,10 @@ import sys
 import os
 from config import re_patterns
 
+# 原数据文件
+source_file = "./source_data.csv"
+
+# 提取完特征之后的文件
 train_file = "./data/train.csv"
 more_file = "./data/more.csv"
 none_file = "./data/none.csv"
@@ -88,7 +92,7 @@ if __name__ == "__main__":
     countMore = 0
     countAll = 0
     countDict = {}
-    for row in documents_from_file("./dongguan.csv"):
+    for row in documents_from_file(source_file):
         print(row["title"])
         countAll += 1
         num = 0
