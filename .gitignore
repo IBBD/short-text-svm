@@ -1,7 +1,7 @@
 data/*
 nenv/*
 test/*
-dongguan-bak.csv
+*.csv
 *.pyc
 *.txt
 *.swp
