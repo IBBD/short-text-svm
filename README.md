@@ -18,6 +18,7 @@ pip install -r requirements.txt
 ./source_data.csv
 
 # 根据特征生成语料库
+# 特征配置在文件config.py中
 python ./format_samples_data.py
 
 # 训练
@@ -27,7 +28,7 @@ python ./train.py
 python ./train_predict.py
 
 # 在测试集上预测
-python ./test_predict.py
+python ./test.py
 
 # 应用
 python ./predict.py
